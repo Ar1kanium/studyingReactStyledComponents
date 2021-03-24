@@ -1,5 +1,4 @@
 import { ThemeProvider } from 'styled-components';
-import './App.css';
 import {darkTheme, lightTheme} from './styling/theme';
 import { Style } from './styling/style.js';
 import React from 'react';
@@ -13,6 +12,8 @@ function App() {
   
   const themeMode = theme === 'light' ? lightTheme: darkTheme;
 
+  const logo = theme === 'light' ? '/images/white!.jpg': 'images/black.jpeg'
+
   if (!componentMounted) {
     return <div />
   };
@@ -21,6 +22,7 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <Style/>
         <h1>Hello, World!</h1>
+        <div><img src={logo} alt='logo'/></div>
         <Button onClick={toggleTheme}> Сменить тему </Button>
     </ThemeProvider>
   );
