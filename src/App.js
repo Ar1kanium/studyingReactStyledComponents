@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={themeMode}>
       <Style/>
-        <h1>Hello, Fucker!</h1>
+        <h1>Hello, World!</h1>
         <Button onClick={toggleTheme}> Сменить тему </Button>
     </ThemeProvider>
   );
