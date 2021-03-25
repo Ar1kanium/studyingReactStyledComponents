@@ -4,6 +4,8 @@ import { Style } from './styling/style.js';
 import React from 'react';
 import { useDarkMode } from './hooks/useDarkMode'
 import {Button} from './components/button'
+import { Logo } from './components/logo';
+import './styling/App.css';
 
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
   
   const themeMode = theme === 'light' ? lightTheme: darkTheme;
 
-  const logo = theme === 'light' ? '/images/white!.jpg': 'images/black.jpeg'
+  const logo = theme === 'light' ? '/images/logoLight.png': 'images/logoBlack.png'
 
   if (!componentMounted) {
     return <div />
@@ -22,7 +24,7 @@ function App() {
     <ThemeProvider theme={themeMode}>
       <Style/>
         <h1>Hello, World!</h1>
-        <div><img src={logo} alt='logo'/></div>
+        <Logo src={logo}/>
         <Button onClick={toggleTheme}> Сменить тему </Button>
     </ThemeProvider>
   );
