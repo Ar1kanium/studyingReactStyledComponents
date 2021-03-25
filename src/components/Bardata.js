@@ -2,7 +2,7 @@ import * as AiIcons from 'react-icons/ai'
 
 export const BarData = [
     {
-        title: 'Главная страница',
+        title: 'Главная',
         path: '/',
         icon: <AiIcons.AiFillHome/>,
         clName : 'nav-text'
@@ -26,7 +26,7 @@ export const BarData = [
         clName : 'nav-text'
     },
     {
-        title: 'Социальные проекты',
+        title: 'Общество',
         path: '/social_responsibilities',
         icon: <AiIcons.AiFillHeart/>,
         clName : 'nav-text'

@@ -57,8 +57,8 @@ export const Navbar = () => {
                         return (
                             <li key={index} className={item.clName}>
                                 <Link to={item.path}>
-                                    <span className='ic'>{item.icon}</span>
-                                    <span className='tex'>{item.title}</span>
+                                    <span className='nav-list-icon'>{item.icon}</span>
+                                    <span className='nav-list-text'>{item.title}</span>
                                 </Link>
                             </li>
                             )
